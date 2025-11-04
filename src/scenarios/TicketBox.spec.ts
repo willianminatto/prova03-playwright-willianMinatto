@@ -1,0 +1,38 @@
+// import { test } from '@playwright/test';
+// import { join } from 'path';
+// import { TheConfig } from 'sicolo';
+// import TicketBoxPage from '../support/pages/TicketBoxPage';
+
+// test.describe('Ticket Box - Testes E2E', () => {
+//   const CONFIG = join(__dirname, '../support/fixtures/config.yml');
+//   const BASE_URL = TheConfig.fromFile(CONFIG)
+//     .andPath('application.ticketbox')
+//     .retrieveData();
+
+//   let ticketBoxPage: TicketBoxPage;
+
+//   test.beforeEach(async ({ page }) => {
+//     ticketBoxPage = new TicketBoxPage(page);
+//     await page.goto(BASE_URL);
+//   });
+
+//   test('01 - Deve carregar a página corretamente', async () => {
+//     await ticketBoxPage.validarTitulo();
+//   });
+
+//   test('02 - Deve validar email incorreto e correto', async () => {
+//     await ticketBoxPage.validarEmail();
+//   });
+
+//   test('03 - Deve resetar o formulário', async () => {
+//     await ticketBoxPage.resetarFormulario();
+//   });
+
+//   test('04 - Deve impedir envio sem checkbox de concordância', async () => {
+//     await ticketBoxPage.validarEnvioSemCheckbox();
+//   });
+
+//   test('05 - Deve verificar visibilidade dos principais elementos', async () => {
+//     await ticketBoxPage.validarElementosVisiveis();
+//   });
+// });
